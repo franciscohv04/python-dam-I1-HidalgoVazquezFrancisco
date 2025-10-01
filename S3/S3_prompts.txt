@@ -6,3 +6,6 @@ se clasifique por tramo(<18, 18-65,>65), manejo de error si no mete número y a�
 Puedes explicarme que hacen las siguientes líneas del código: from datetime import datetime, 
 current_year = datetime.now().year, except ValueError:, 
 print(f"Hola {nombre}, tienes {edad} años y estás clasificado como: {tramo}")
+
+añade al código de antes para que pueda calcular la edad exacta introduciendo dia y mes de la fecvha de naciemiento del usaurio, 
+que diga su signo del zodiaco y que los mensajes imprimidos por pantalla se vean mejor
