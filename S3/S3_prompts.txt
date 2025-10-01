@@ -9,3 +9,7 @@ print(f"Hola {nombre}, tienes {edad} años y estás clasificado como: {tramo}")
 
 añade al código de antes para que pueda calcular la edad exacta introduciendo dia y mes de la fecvha de naciemiento del usaurio, 
 que diga su signo del zodiaco y que los mensajes imprimidos por pantalla se vean mejor
+
+Prompts usados para eco_io.py
+crea otro programa en python que pida tres números, realize la media de los números, los sume y diga cual es el mayor, 
+muestra los resultados por pantalla ademas de añadir comentarios
