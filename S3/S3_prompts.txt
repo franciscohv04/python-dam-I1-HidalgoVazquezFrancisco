@@ -1,0 +1,8 @@
+Prompts usados para perfil.py
+
+crea me un código en python en el cual se pida nombre y edad de nacimiento, se le calcule la edad, 
+se clasifique por tramo(<18, 18-65,>65), manejo de error si no mete número y añade comentarios.
+
+Puedes explicarme que hacen las siguientes líneas del código: from datetime import datetime, 
+current_year = datetime.now().year, except ValueError:, 
+print(f"Hola {nombre}, tienes {edad} años y estás clasificado como: {tramo}")
