@@ -8,3 +8,8 @@ además añade al código que muestre el cuadrado de los números introducidos, 
 
 explícame este código: zip(numeros, cuadrados): 
     print(f"   {n:>8}  →  {c:.2f}")
+
+Prompts usados en temperaturas.py
+
+Genera un programa en python que sea un conversor de temperaturas: de grados centigrados a kellvin o farenheit
+
