@@ -36,3 +36,4 @@ crea un programa en python que diga si un número introducido por el usaurio es 
 
 explicame paso a paso como funciona esta parte del código: for i in range(2, int(num**0.5) + 1)
 
+añade al código que muestre por pantalla paso a paso la parte de comprobar si un número es primo
