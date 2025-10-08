@@ -28,3 +28,4 @@ explicame esta parte del código: for c in texto:
     if c.isupper():
         num_mayusculas += 1
 
+Agrega en el código de cadenas manejo de errores por si el usuario escribe un número y añade que el programa cuente las minúsculas y las palabras escritas
