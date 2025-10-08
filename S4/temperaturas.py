@@ -1,33 +1,57 @@
-# Conversor de Temperaturas
-# De grados Celsius a Kelvin o Fahrenheit
+# 🌡️ Conversor de Temperaturas Completo
+# Permite convertir entre Celsius, Fahrenheit y Kelvin
 
-print("="*45)
-print("🌡️  CONVERSOR DE TEMPERATURAS")
-print("="*45)
+print("="*50)
+print("🌡️  CONVERSOR DE TEMPERATURAS UNIVERSAL")
+print("="*50)
 
-# Pedir al usuario la temperatura en grados Celsius
-celsius = float(input("Introduce la temperatura en grados Celsius: "))
-
-# Mostrar opciones de conversión
-print("\n¿A qué unidad deseas convertir?")
-print("1️⃣  Kelvin (K)")
+# Mostrar opciones de unidades
+print("Unidades disponibles:")
+print("1️⃣  Celsius (°C)")
 print("2️⃣  Fahrenheit (°F)")
+print("3️⃣  Kelvin (K)")
 
-# Pedir elección
-opcion = input("Elige una opción (1 o 2): ")
+# Pedir unidad de origen
+origen = input("\nIntroduce el número de la unidad de ORIGEN: ")
 
-print("\n" + "-"*45)
+# Pedir temperatura
+temp = float(input("Introduce la temperatura que deseas convertir: "))
 
-# Calcular según la opción elegida
-if opcion == "1":
-    kelvin = celsius + 273.15
-    print(f"✅ {celsius:.2f} °C equivalen a {kelvin:.2f} K")
-elif opcion == "2":
-    fahrenheit = (celsius * 9/5) + 32
-    print(f"✅ {celsius:.2f} °C equivalen a {fahrenheit:.2f} °F")
+# Pedir unidad de destino
+destino = input("Introduce el número de la unidad de DESTINO: ")
+
+print("\n" + "-"*50)
+
+# Convertir la temperatura según las opciones
+resultado = None
+
+# Primero, convertir todo a Celsius como base
+if origen == "1":  # Celsius
+    celsius = temp
+elif origen == "2":  # Fahrenheit
+    celsius = (temp - 32) * 5/9
+elif origen == "3":  # Kelvin
+    celsius = temp - 273.15
 else:
-    print("⚠️  Opción no válida. Por favor, elige 1 o 2.")
+    print("⚠️  Unidad de origen no válida.")
+    exit()
 
-print("-"*45)
+# Luego, convertir desde Celsius a la unidad de destino
+if destino == "1":  # Celsius
+    resultado = celsius
+    unidad = "°C"
+elif destino == "2":  # Fahrenheit
+    resultado = (celsius * 9/5) + 32
+    unidad = "°F"
+elif destino == "3":  # Kelvin
+    resultado = celsius + 273.15
+    unidad = "K"
+else:
+    print("⚠️  Unidad de destino no válida.")
+    exit()
+
+# Mostrar el resultado
+print(f"✅ {temp:.2f} en la unidad elegida equivale a {resultado:.2f} {unidad}")
+print("-"*50)
 print("Conversión completada con éxito.")
-print("="*45)
+print("="*50)

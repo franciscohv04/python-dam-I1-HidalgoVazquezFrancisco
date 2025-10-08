@@ -13,3 +13,4 @@ Prompts usados en temperaturas.py
 
 Genera un programa en python que sea un conversor de temperaturas: de grados centigrados a kellvin o farenheit
 
+Cambia el código para que el usuario pueda elegir que tipo de unidad quiere ingresar la temperatura y a que tipo convertirla
