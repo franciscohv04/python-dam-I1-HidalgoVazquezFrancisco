@@ -1,0 +1,6 @@
+Prompts usados en lista_numeros.py
+
+Escribe un programa en python que pida una lista de números separados por comas, convierta a floats, calcule suma, media y máximo, y detecte duplicados
+
+explícame para que sirven los siguientes trozos de código: float(x.strip()),in entrada.split(","),set([x for x in numeros if numeros.count(x) > 1]),{sorted(duplicados)}
+
