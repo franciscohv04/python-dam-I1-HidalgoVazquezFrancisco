@@ -4,3 +4,7 @@ Escribe un programa en python que pida una lista de números separados por comas
 
 explícame para que sirven los siguientes trozos de código: float(x.strip()),in entrada.split(","),set([x for x in numeros if numeros.count(x) > 1]),{sorted(duplicados)}
 
+además añade al código que muestre el cuadrado de los números introducidos, muestra los resultados de una forma más vistosa 
+
+explícame este código: zip(numeros, cuadrados): 
+    print(f"   {n:>8}  →  {c:.2f}")

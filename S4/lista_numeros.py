@@ -14,12 +14,26 @@ maximo = max(numeros)
 # Detectar duplicados
 duplicados = set([x for x in numeros if numeros.count(x) > 1])
 
-# Mostrar resultados
-print(f"\nResultados:")
-print(f"Suma: {suma}")
-print(f"Media: {media}")
-print(f"Máximo: {maximo}")
+# Calcular cuadrados
+cuadrados = [x**2 for x in numeros]
+
+# Mostrar resultados con formato vistoso
+print("\n" + "="*50)
+print("📊  RESULTADOS DEL ANÁLISIS DE NÚMEROS")
+print("="*50)
+print(f"🔢 Números introducidos: {numeros}")
+print(f"🧮 Suma total: {suma:.2f}")
+print(f"📈 Media: {media:.2f}")
+print(f"🏆 Máximo: {maximo}")
+print("-"*50)
+
+print("⬛ Cuadrado de cada número:")
+for n, c in zip(numeros, cuadrados):
+    print(f"   {n:>8}  →  {c:.2f}")
+
+print("-"*50)
 if duplicados:
-    print(f"Duplicados encontrados: {sorted(duplicados)}")
+    print(f"⚠️  Duplicados encontrados: {sorted(duplicados)}")
 else:
-    print("No hay duplicados.")
+    print("✅ No hay duplicados.")
+print("="*50)
