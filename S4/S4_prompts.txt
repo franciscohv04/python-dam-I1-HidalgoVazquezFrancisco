@@ -14,3 +14,17 @@ Prompts usados en temperaturas.py
 Genera un programa en python que sea un conversor de temperaturas: de grados centigrados a kellvin o farenheit
 
 Cambia el código para que el usuario pueda elegir que tipo de unidad quiere ingresar la temperatura y a que tipo convertirla
+
+Prompts usados en cadenas.py
+
+Crea un programa en python donde reciba una cadena y cuente el número de vocales, consonantes, mayúsculas y número de caracteres
+
+explicame esta parte del código: for c in texto:
+    if c.isalpha():  # Solo letras
+        if c in vocales:
+            num_vocales += 1
+        else:
+            num_consonantes += 1
+    if c.isupper():
+        num_mayusculas += 1
+
