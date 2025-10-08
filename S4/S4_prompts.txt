@@ -29,3 +29,10 @@ explicame esta parte del código: for c in texto:
         num_mayusculas += 1
 
 Agrega en el código de cadenas manejo de errores por si el usuario escribe un número y añade que el programa cuente las minúsculas y las palabras escritas
+
+Prompts usados en primo.py
+
+crea un programa en python que diga si un número introducido por el usaurio es primo o no, que maneje la excepción de el usuario escribe otra cosa que no sea un número entero
+
+explicame paso a paso como funciona esta parte del código: for i in range(2, int(num**0.5) + 1)
+
